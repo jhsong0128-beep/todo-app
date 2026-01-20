@@ -1,0 +1,197 @@
+.folderManager {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin-bottom: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.addBtn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.addBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.folderList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.folderItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.folder {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border: none;
+  background: transparent;
+  border-left: 3px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.folder:hover {
+  background: #f8f9fa;
+  transform: translateX(2px);
+}
+
+.folder.active {
+  background: #f0f0f0;
+  font-weight: 600;
+}
+
+.folderIcon {
+  font-size: 16px;
+}
+
+.colorDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.folderName {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.deleteBtn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: #f0f0f0;
+  color: #95a5a6;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.deleteBtn:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.addForm {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 2px solid #f0f0f0;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  margin-bottom: 10px;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.formActions {
+  display: flex;
+  gap: 8px;
+}
+
+.cancelBtn,
+.saveBtn {
+  flex: 1;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelBtn {
+  background: #f0f0f0;
+  color: #7f8c8d;
+}
+
+.cancelBtn:hover {
+  background: #e0e0e0;
+}
+
+.saveBtn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.saveBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+  .folderManager {
+    padding: 16px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+
+  .folder {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+}
